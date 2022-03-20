@@ -1,0 +1,23 @@
+{
+  "name": "akini",
+  "version": "1.0.0",
+  "description": "A HTML/CSS/Vanilla JS build system",
+  "main": "akini.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "clean-css": "^5.2.4",
+    "terser": "^5.12.1"
+  },
+  "devDependencies": {
+    "express": "^4.17.3",
+    "jsdoc-to-markdown": "^7.1.1"
+  }
+}
