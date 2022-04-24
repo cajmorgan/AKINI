@@ -29,7 +29,7 @@ AKINI comes with a small API and a opinionated structure that has to be followed
 
 ### Structure
 
-To work with this library, a specific folder structure must be followed. Below is a general structure with example names marked with *italic*.
+To work with this library, a specific folder structure must be followed. Below is a general structure with example names marked with **.
 
 ```bash
 .
