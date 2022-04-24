@@ -1,6 +1,6 @@
 {
   "name": "akini",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A HTML/CSS/Vanilla JS build system",
   "main": "akini.js",
   "directories": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server/server.js",
+    "docs": "node docConfig.js"
   },
   "author": "",
   "license": "ISC",

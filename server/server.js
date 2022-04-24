@@ -1,12 +1,12 @@
 const express = require('express');
-const { Compiler } = require('./akini.js');
+const { Compiler } = require('../akini.js');
 
 const app = express();
 app.use(express.static('build'));
 
 (async () => {
   const compiler = new Compiler([], '', { isBuilding: true });
-  await compiler.watch();
+  await compiler.watch({ server: true });
 
   // console.log(compiler)
 })()

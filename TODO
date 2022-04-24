@@ -1,0 +1,5 @@
+1. Server folder opinionated structure with watch (nodemon similar) to target server.js file. 
+2. Rebuild system, 
+where build only happens for specific page if a file has a newer change date of the build file.
+This will improve performance a lot on larger projects and be more similar to make. 
+Only rebuild when in need. 
