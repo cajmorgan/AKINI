@@ -30,6 +30,8 @@ AKINI comes with a small API and a opinionated structure that has to be followed
 ### Structure
 
 To work with this library, a specific folder structure must be followed. Below is a general structure with example names marked with *italic*.
+
+```bash
 .
 ├── components/
 │   ├── *header*
@@ -47,6 +49,7 @@ To work with this library, a specific folder structure must be followed. Below i
 ├── public
 └── server/
     └── server.js
+```
 
 #### Things to be aware of
 Pages are statically generated and compiled through the Generator & Compiler classes. Every page share one namespace so name clashes between global variables and classes/ids can happen if not careful. 
@@ -57,6 +60,7 @@ AKINI does not support import/export f.e like Webpack. It's possible though to p
 The easiest way to see how the system works are through practical examples. 
 Let's start with the pages folder. 
 
+```bash
 ├── pages/
 │   ├── ... 
 │   └── home/
@@ -67,6 +71,7 @@ Let's start with the pages folder.
 │       │   │   └── styles.css
 │       │   └── ...
 │       └── page.js
+```
 
 #### page.js
 ```js
@@ -262,12 +267,14 @@ const loadedEvent = window.addEventListener('load', fullyLoaded);
 
 This simple structure is necessary to follow for all components with the correct names, which makes the project easy to keep clean. To continue with practical examples, I think it would be wise to show an example of the general components in the root folder:
 
+```bash
 .
 └── components/
     └── *header*/
         ├── static.js
         ├── dynamic.js
         └── styles.css
+```
 
 As can be seen in the page.js example, you can import them solely by passing in an object with a component key and a value of the name. They follow the exact same structure as page specific components. 
 
@@ -305,9 +312,6 @@ app.listen(PORT, () => console.log(`👹 -> ${PORT}`))
 
 ```
 
-
-server
-  server.js
 
 ## API
 
